@@ -1,16 +1,22 @@
 name: DoThanhDatDeveloper
+
 options:
   bundleIdPrefix: com.dothanhdat
+
 targets:
   DoThanhDatDeveloper:
     type: application
     platform: iOS
     deploymentTarget: "17.0"
+
     sources:
-      - DoThanhDatDeveloper
+      - path: DoThanhDatDeveloper
+
     settings:
       PRODUCT_BUNDLE_IDENTIFIER: com.dothanhdat.developer
       SWIFT_VERSION: "5.0"
       TARGETED_DEVICE_FAMILY: "1,2"
       CODE_SIGN_STYLE: Manual
-      DEVELOPMENT_TEAM: "$(DEVELOPMENT_TEAM)"
+      DEVELOPMENT_TEAM: ""
+      GENERATE_INFOPLIST_FILE: false
+      INFOPLIST_FILE: DoThanhDatDeveloper/Info.plist
